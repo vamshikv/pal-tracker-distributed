@@ -1,0 +1,14 @@
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Accounts.deps.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Accounts.runtimeconfig.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Accounts.runtimeconfig.dev.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Accounts.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Accounts.pdb
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Users.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\bin\Debug\netcoreapp2.1\Users.pdb
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.csprojAssemblyReference.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.csproj.CoreCompileInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.AssemblyInfoInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.AssemblyInfo.cs
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.csproj.CopyComplete
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Accounts\obj\Debug\netcoreapp2.1\Accounts.pdb

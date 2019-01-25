@@ -1,0 +1,11 @@
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\bin\Debug\netcoreapp2.1\TestSupport.deps.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\bin\Debug\netcoreapp2.1\TestSupport.runtimeconfig.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\bin\Debug\netcoreapp2.1\TestSupport.runtimeconfig.dev.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\bin\Debug\netcoreapp2.1\TestSupport.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\bin\Debug\netcoreapp2.1\TestSupport.pdb
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\obj\Debug\netcoreapp2.1\TestSupport.csprojAssemblyReference.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\obj\Debug\netcoreapp2.1\TestSupport.csproj.CoreCompileInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\obj\Debug\netcoreapp2.1\TestSupport.AssemblyInfoInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\obj\Debug\netcoreapp2.1\TestSupport.AssemblyInfo.cs
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\obj\Debug\netcoreapp2.1\TestSupport.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\TestSupport\obj\Debug\netcoreapp2.1\TestSupport.pdb

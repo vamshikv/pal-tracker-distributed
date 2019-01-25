@@ -1,0 +1,11 @@
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\bin\Debug\netcoreapp2.1\Projects.deps.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\bin\Debug\netcoreapp2.1\Projects.runtimeconfig.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\bin\Debug\netcoreapp2.1\Projects.runtimeconfig.dev.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\bin\Debug\netcoreapp2.1\Projects.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\bin\Debug\netcoreapp2.1\Projects.pdb
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\obj\Debug\netcoreapp2.1\Projects.csprojAssemblyReference.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\obj\Debug\netcoreapp2.1\Projects.csproj.CoreCompileInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\obj\Debug\netcoreapp2.1\Projects.AssemblyInfoInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\obj\Debug\netcoreapp2.1\Projects.AssemblyInfo.cs
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\obj\Debug\netcoreapp2.1\Projects.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\Projects\obj\Debug\netcoreapp2.1\Projects.pdb

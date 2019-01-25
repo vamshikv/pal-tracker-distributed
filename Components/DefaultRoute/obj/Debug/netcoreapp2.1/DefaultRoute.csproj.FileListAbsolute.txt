@@ -1,0 +1,11 @@
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\bin\Debug\netcoreapp2.1\DefaultRoute.deps.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\bin\Debug\netcoreapp2.1\DefaultRoute.runtimeconfig.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\bin\Debug\netcoreapp2.1\DefaultRoute.runtimeconfig.dev.json
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\bin\Debug\netcoreapp2.1\DefaultRoute.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\bin\Debug\netcoreapp2.1\DefaultRoute.pdb
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\obj\Debug\netcoreapp2.1\DefaultRoute.csprojAssemblyReference.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\obj\Debug\netcoreapp2.1\DefaultRoute.csproj.CoreCompileInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\obj\Debug\netcoreapp2.1\DefaultRoute.AssemblyInfoInputs.cache
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\obj\Debug\netcoreapp2.1\DefaultRoute.AssemblyInfo.cs
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\obj\Debug\netcoreapp2.1\DefaultRoute.dll
+C:\Users\vamshi_kalwakolu\Documents\DFS\ASP_NET_PAL_CND\asp.net_core_web_api\pal-tracker-distributed\Components\DefaultRoute\obj\Debug\netcoreapp2.1\DefaultRoute.pdb
