@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "dd37632e2db16b121b617688f80337e5d702fcc1"
+    "signature": "6bb3fe29862a1667427343e989cec969e2f6ccdd"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,10 +11,24 @@
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.NETCore.App": "2.1.0",
           "Pomelo.EntityFrameworkCore.MySql": "2.1.2",
+          "RabbitMQ.Client": "5.1.0",
+          "Steeltoe.CircuitBreaker.Hystrix.MetricsStreamCore": "2.1.1",
+          "Steeltoe.CircuitBreaker.HystrixCore": "2.1.1",
           "System.Runtime.Serialization.Json": "4.3.0"
         },
         "runtime": {
           "Allocations.dll": {}
+        }
+      },
+      "HdrHistogram/2.0.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/HdrHistogram.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore/2.1.4": {
@@ -63,6 +77,12 @@
       },
       "Microsoft.NETCore.Platforms/2.1.0": {},
       "Microsoft.NETCore.Targets/2.1.0": {},
+      "Microsoft.Win32.Primitives/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.NETCore.Targets": "2.1.0"
+        }
+      },
       "MySqlConnector/0.44.1": {
         "runtime": {
           "lib/netcoreapp2.1/MySqlConnector.dll": {
@@ -96,6 +116,21 @@
           }
         }
       },
+      "RabbitMQ.Client/5.1.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Security": "4.3.0",
+          "System.Net.Sockets": "4.3.0",
+          "System.Threading.Timer": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.1.0.0"
+          }
+        }
+      },
       "Remotion.Linq/2.2.0": {
         "dependencies": {
           "System.Linq.Queryable": "4.0.1"
@@ -107,7 +142,107 @@
           }
         }
       },
+      "runtime.native.System.Net.Security/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.NETCore.Targets": "2.1.0"
+        }
+      },
+      "Steeltoe.CircuitBreaker.Hystrix.MetricsStreamCore/2.1.1": {
+        "dependencies": {
+          "Steeltoe.CircuitBreaker.HystrixBase": "2.1.1",
+          "Steeltoe.CloudFoundry.ConnectorCore": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.CircuitBreaker.Hystrix.MetricsStreamCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.CircuitBreaker.HystrixBase/2.1.1": {
+        "dependencies": {
+          "HdrHistogram": "2.0.0",
+          "Steeltoe.Common": "2.1.1",
+          "System.Reactive": "3.1.1",
+          "System.Reactive.Observable.Aliases": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.CircuitBreaker.HystrixBase.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.CircuitBreaker.HystrixCore/2.1.1": {
+        "dependencies": {
+          "Steeltoe.CircuitBreaker.HystrixBase": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.CircuitBreaker.HystrixCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.CloudFoundry.ConnectorBase/2.1.1": {
+        "dependencies": {
+          "Steeltoe.Extensions.Configuration.CloudFoundryBase": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.CloudFoundry.ConnectorBase.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.CloudFoundry.ConnectorCore/2.1.1": {
+        "dependencies": {
+          "Steeltoe.CloudFoundry.ConnectorBase": "2.1.1",
+          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.CloudFoundry.ConnectorCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.Common/2.1.1": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Common.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.Extensions.Configuration.CloudFoundryBase/2.1.1": {
+        "dependencies": {
+          "Steeltoe.Common": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryBase.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
+      "Steeltoe.Extensions.Configuration.CloudFoundryCore/2.1.1": {
+        "dependencies": {
+          "Steeltoe.Extensions.Configuration.CloudFoundryBase": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        }
+      },
       "System.Collections.Immutable/1.5.0": {},
+      "System.ComponentModel/4.0.1": {},
       "System.Diagnostics.DiagnosticSource/4.5.1": {
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {
@@ -128,7 +263,129 @@
         }
       },
       "System.Linq.Queryable/4.0.1": {},
-      "System.Runtime.Serialization.Json/4.3.0": {}
+      "System.Net.NameResolution/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "System.Net.Security/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.Threading.ThreadPool": "4.3.0",
+          "runtime.native.System.Net.Security": "4.3.0"
+        },
+        "runtimeTargets": {
+          "runtime/unix/lib/_._": {
+            "rid": "unix",
+            "assetType": "runtime"
+          },
+          "runtime/win/lib/_._": {
+            "rid": "win",
+            "assetType": "runtime"
+          }
+        }
+      },
+      "System.Net.Sockets/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.NETCore.Targets": "2.1.0"
+        }
+      },
+      "System.Reactive/3.1.1": {
+        "dependencies": {
+          "System.Reactive.PlatformServices": "3.1.1"
+        }
+      },
+      "System.Reactive.Core/3.1.1": {
+        "dependencies": {
+          "System.ComponentModel": "4.0.1",
+          "System.Reactive.Interfaces": "3.1.1",
+          "System.Threading.ThreadPool": "4.3.0"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/System.Reactive.Core.dll": {
+            "assemblyVersion": "3.0.6000.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Reactive.Interfaces/3.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.0/System.Reactive.Interfaces.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Reactive.Linq/3.1.1": {
+        "dependencies": {
+          "System.Reactive.Core": "3.1.1",
+          "System.Runtime.InteropServices.WindowsRuntime": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reactive.Linq.dll": {
+            "assemblyVersion": "3.0.3000.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Reactive.Observable.Aliases/3.1.1": {
+        "dependencies": {
+          "System.Reactive.Providers": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reactive.Observable.Aliases.dll": {
+            "assemblyVersion": "3.0.3000.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Reactive.PlatformServices/3.1.1": {
+        "dependencies": {
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/System.Reactive.PlatformServices.dll": {
+            "assemblyVersion": "3.0.6000.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Reactive.Providers/3.1.1": {
+        "dependencies": {
+          "System.Linq.Queryable": "4.0.1",
+          "System.Reactive.Linq": "3.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Reactive.Providers.dll": {
+            "assemblyVersion": "3.0.3000.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Runtime.InteropServices.WindowsRuntime/4.0.1": {},
+      "System.Runtime.Serialization.Json/4.3.0": {},
+      "System.Threading.ThreadPool/4.3.0": {},
+      "System.Threading.Timer/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.0",
+          "Microsoft.NETCore.Targets": "2.1.0"
+        }
+      }
     }
   },
   "libraries": {
@@ -136,6 +393,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HdrHistogram/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A6peYTsBMyFY/Sy0bEmZxwjWcpoVn8MM16hcx+/ZcT9XFsT0sIxZOjV1VcAqGZsvWoPEDGR7OhTd3UDmFe9s1Q==",
+      "path": "hdrhistogram/2.0.0",
+      "hashPath": "hdrhistogram.2.0.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.1.4": {
       "type": "package",
@@ -200,6 +464,13 @@
       "path": "microsoft.netcore.targets/2.1.0",
       "hashPath": "microsoft.netcore.targets.2.1.0.nupkg.sha512"
     },
+    "Microsoft.Win32.Primitives/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
+      "path": "microsoft.win32.primitives/4.3.0",
+      "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
+    },
     "MySqlConnector/0.44.1": {
       "type": "package",
       "serviceable": true,
@@ -228,6 +499,13 @@
       "path": "pomelo.jsonobject/2.0.0",
       "hashPath": "pomelo.jsonobject.2.0.0.nupkg.sha512"
     },
+    "RabbitMQ.Client/5.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oMXzDw2NLDHYlAYVJs5AHZDGkTsuzmaAPNfHjgkPqq3VfnxAXgsJ643ts6xsdXJftpwPbDAwN5YP65lHm+MiNg==",
+      "path": "rabbitmq.client/5.1.0",
+      "hashPath": "rabbitmq.client.5.1.0.nupkg.sha512"
+    },
     "Remotion.Linq/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -235,12 +513,82 @@
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
     },
+    "runtime.native.System.Net.Security/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M2nN92ePS8BgQ2oi6Jj3PlTUzadYSIWLdZrHY1n1ZcW9o4wAQQ6W+aQ2lfq1ysZQfVCgDwY58alUdowrzezztg==",
+      "path": "runtime.native.system.net.security/4.3.0",
+      "hashPath": "runtime.native.system.net.security.4.3.0.nupkg.sha512"
+    },
+    "Steeltoe.CircuitBreaker.Hystrix.MetricsStreamCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j+tAwCXpzUOspv5ilFdnHAQKwHtdfOdl97JFOtRzLL5ssaT6MyAkuEe4dTNwLiiWfQVPpt2GZI9nyNAutYd64Q==",
+      "path": "steeltoe.circuitbreaker.hystrix.metricsstreamcore/2.1.1",
+      "hashPath": "steeltoe.circuitbreaker.hystrix.metricsstreamcore.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.CircuitBreaker.HystrixBase/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V9tcSJcdWNPEE7pyEER9eFrgyq45e5SI5U6AkX3iZfCxLWcbhbDauulwJc44VGjSSfTDdON1xw/m5590xzIxcw==",
+      "path": "steeltoe.circuitbreaker.hystrixbase/2.1.1",
+      "hashPath": "steeltoe.circuitbreaker.hystrixbase.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.CircuitBreaker.HystrixCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KOENSsXWtQxfvMEWL8ZdG0b12av0ZwGXPbtgCn3Cn0WoLY6yGEyQSjmDSpYuPDPWntfWp/RumLOuay0vXXJgMg==",
+      "path": "steeltoe.circuitbreaker.hystrixcore/2.1.1",
+      "hashPath": "steeltoe.circuitbreaker.hystrixcore.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.CloudFoundry.ConnectorBase/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sTrfAYwNNoflxIudbrYIzSBLD0/oAwMx6vp6611Kk60t1ZWOlp6xRBVAnaAG6ngXezIq2EOCB3Wfb6rc/ejdtA==",
+      "path": "steeltoe.cloudfoundry.connectorbase/2.1.1",
+      "hashPath": "steeltoe.cloudfoundry.connectorbase.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.CloudFoundry.ConnectorCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P7V06VC+U4nK4lfQmj7GtpyHO70efBNOwS8RFqO1oyLkLQwIIXoZ8INxrQE39KNj892PsDJJ9rj1XDdXUOl1SQ==",
+      "path": "steeltoe.cloudfoundry.connectorcore/2.1.1",
+      "hashPath": "steeltoe.cloudfoundry.connectorcore.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.Common/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hMllH2KEDgsVkM66yBbMS74LJJuNMc7OdPfTzvVaPrzL9uk5yk+8lutTuQ3v2/N43HCz9Q2ofIXbiBAwyJaEzA==",
+      "path": "steeltoe.common/2.1.1",
+      "hashPath": "steeltoe.common.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.Extensions.Configuration.CloudFoundryBase/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sbD5gBilAcUOYS9m5Ys7tYuOKLlUJkGK8BmhC32dh1mK9siKubQ/P3zqlxnjdxeHfnv2LDydVaYJLonNcSyMFg==",
+      "path": "steeltoe.extensions.configuration.cloudfoundrybase/2.1.1",
+      "hashPath": "steeltoe.extensions.configuration.cloudfoundrybase.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.Extensions.Configuration.CloudFoundryCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tswAk1x6qcX8nYnqhpE32fFqsFFSqTXt4hZAZobdD9mSQfR/Le0zwAcNIlvqgjEt0wgnRVk60sZ1HfTbKk+ORg==",
+      "path": "steeltoe.extensions.configuration.cloudfoundrycore/2.1.1",
+      "hashPath": "steeltoe.extensions.configuration.cloudfoundrycore.2.1.1.nupkg.sha512"
+    },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-RGxi2aQoXgZ5ge0zxrKqI4PU9LrYYoLC+cnEnWXKsSduCOUhE1GEAAoTexUVT8RZOILQyy1B27HC8Xw/XLGzdQ==",
       "path": "system.collections.immutable/1.5.0",
       "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/4.5.1": {
       "type": "package",
@@ -263,12 +611,103 @@
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
+    "System.Net.NameResolution/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
+      "path": "system.net.nameresolution/4.3.0",
+      "hashPath": "system.net.nameresolution.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Security/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IgJKNfALqw7JRWp5LMQ5SWHNKvXVz094U6wNE3c1i8bOkMQvgBL+MMQuNt3xl9Qg9iWpj3lFxPZEY6XHmROjMQ==",
+      "path": "system.net.security/4.3.0",
+      "hashPath": "system.net.security.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Sockets/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m6icV6TqQOAdgt5N/9I5KNpjom/5NFtkmGseEH+AK/hny8XrytLH3+b5M8zL/Ycg3fhIocFpUMyl/wpFnVRvdw==",
+      "path": "system.net.sockets/4.3.0",
+      "hashPath": "system.net.sockets.4.3.0.nupkg.sha512"
+    },
+    "System.Reactive/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-elkQdVQoBVX39BHrYHMc3Rnbb7a9qBJIwNCvhq1psPMOEPo62/VHB0lJu671x3fOrGL4V/85n6p2Az1tw7Kvmg==",
+      "path": "system.reactive/3.1.1",
+      "hashPath": "system.reactive.3.1.1.nupkg.sha512"
+    },
+    "System.Reactive.Core/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CKWC+UP1aM75taNX+sTBn2P97uHIUjKxq+z45iy7P91QGFqNFleR2tsqIC76HMVvYl7o8oWyMiycdsc9rC1Z/g==",
+      "path": "system.reactive.core/3.1.1",
+      "hashPath": "system.reactive.core.3.1.1.nupkg.sha512"
+    },
+    "System.Reactive.Interfaces/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aNVY3QoRznGFeQ+w+bMqhD8ElNWoyYq+7XTQIoxKKjBOyTOjUqIMEf1wvSdtwC4y92zg2W9q38b4Sr6cYNHVLg==",
+      "path": "system.reactive.interfaces/3.1.1",
+      "hashPath": "system.reactive.interfaces.3.1.1.nupkg.sha512"
+    },
+    "System.Reactive.Linq/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HwsZsoYRg51cLGBOEa0uoZ5+d4CMcHEg/KrbqePhLxoz/SLA+ULISphBtn3woABPATOQ6j5YgGZWh4jxnJ3KYQ==",
+      "path": "system.reactive.linq/3.1.1",
+      "hashPath": "system.reactive.linq.3.1.1.nupkg.sha512"
+    },
+    "System.Reactive.Observable.Aliases/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GFt9eT5ShHlEXOt4aHN+p5+g5WqOnG1wm/zUQXTwZPlBXzrYxKH1WcfvV3njog7C1igDyL4kp967A9Ih93GT7g==",
+      "path": "system.reactive.observable.aliases/3.1.1",
+      "hashPath": "system.reactive.observable.aliases.3.1.1.nupkg.sha512"
+    },
+    "System.Reactive.PlatformServices/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jCJ3iGDLb4duOxZ/Uo3O7PssWE48uRp0fw92AlIwrMNaZRUmZNkZyqbl0nUT+joFARBYun8XiVIDQreMJKBedA==",
+      "path": "system.reactive.platformservices/3.1.1",
+      "hashPath": "system.reactive.platformservices.3.1.1.nupkg.sha512"
+    },
+    "System.Reactive.Providers/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LmcVRAjoVW78GHn8cHYjRr2OgClXp9JRz1x1gP7KCcVm0MZQOFdw4YyHxTK5mrSRSEZt16ViU0vxVOqjCE70TA==",
+      "path": "system.reactive.providers/3.1.1",
+      "hashPath": "system.reactive.providers.3.1.1.nupkg.sha512"
+    },
+    "System.Runtime.InteropServices.WindowsRuntime/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oIIXM4w2y3MiEZEXA+RTtfPV+SZ1ymbFdWppHlUciNdNIL0/Uo3HW9q9iN2O7T7KUmRdvjA7C2Gv4exAyW4zEQ==",
+      "path": "system.runtime.interopservices.windowsruntime/4.0.1",
+      "hashPath": "system.runtime.interopservices.windowsruntime.4.0.1.nupkg.sha512"
+    },
     "System.Runtime.Serialization.Json/4.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-CpVfOH0M/uZ5PH+M9+Gu56K0j9lJw3M+PKRegTkcrY/stOIvRUeonggxNrfBYLA5WOHL2j15KNJuTuld3x4o9w==",
       "path": "system.runtime.serialization.json/4.3.0",
       "hashPath": "system.runtime.serialization.json.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.ThreadPool/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k/+g4b7vjdd4aix83sTgC9VG6oXYKAktSfNIJUNGxPEj7ryEOfzHHhfnmsZvjxawwcD9HyWXKCXmPjX8U4zeSw==",
+      "path": "system.threading.threadpool/4.3.0",
+      "hashPath": "system.threading.threadpool.4.3.0.nupkg.sha512"
+    },
+    "System.Threading.Timer/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
+      "path": "system.threading.timer/4.3.0",
+      "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
     }
   }
 }
