@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "43af9170602e7c16c5a34110c6b519f7a0a45a92"
+    "signature": "934e2f57b5f855e4f0e79fb3e06f539141c8b356"
   },
   "compilationOptions": {
     "defines": [
@@ -31,6 +31,7 @@
           "Microsoft.Extensions.Logging.Debug": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
+          "Pivotal.Extensions.Configuration.ConfigServerCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
           "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1"
@@ -310,6 +311,40 @@
         },
         "compile": {
           "lib/netstandard2.0/Pivotal.Discovery.EurekaBase.dll": {}
+        }
+      },
+      "Pivotal.Extensions.Configuration.ConfigServerBase/2.1.1": {
+        "dependencies": {
+          "Steeltoe.Common": "2.1.1",
+          "Steeltoe.Common.Http": "2.1.1",
+          "Steeltoe.Extensions.Configuration.CloudFoundryBase": "2.1.1",
+          "Steeltoe.Extensions.Configuration.ConfigServerBase": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerBase.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerBase.dll": {}
+        }
+      },
+      "Pivotal.Extensions.Configuration.ConfigServerCore/2.1.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.1.1",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
+          "Pivotal.Extensions.Configuration.ConfigServerBase": "2.1.1",
+          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerCore.dll": {}
         }
       },
       "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
@@ -678,6 +713,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.dll": {}
+        }
+      },
+      "Steeltoe.Extensions.Configuration.ConfigServerBase/2.1.1": {
+        "dependencies": {
+          "Steeltoe.Common.Http": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.ConfigServerBase.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.ConfigServerBase.dll": {}
         }
       },
       "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
@@ -3917,6 +3966,20 @@
       "path": "pivotal.discovery.eurekabase/2.1.1",
       "hashPath": "pivotal.discovery.eurekabase.2.1.1.nupkg.sha512"
     },
+    "Pivotal.Extensions.Configuration.ConfigServerBase/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YIm43+rebNSFUTNMwgLe5RPCooQ+cHP7oOh4TcoEpwiU64ynsN/TQjC0RfNjyKQjN/OdTJKsKQ2g/CPvguvYUQ==",
+      "path": "pivotal.extensions.configuration.configserverbase/2.1.1",
+      "hashPath": "pivotal.extensions.configuration.configserverbase.2.1.1.nupkg.sha512"
+    },
+    "Pivotal.Extensions.Configuration.ConfigServerCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ose0xSbdzHGPHpRgU0kvxvzOEL9w7C0z2YgtjlJQEaltr5MmFWzgCeZecbmarLRde/qjpPbf7uf1U/BNqs44vg==",
+      "path": "pivotal.extensions.configuration.configservercore/2.1.1",
+      "hashPath": "pivotal.extensions.configuration.configservercore.2.1.1.nupkg.sha512"
+    },
     "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -4105,6 +4168,13 @@
       "sha512": "sha512-tswAk1x6qcX8nYnqhpE32fFqsFFSqTXt4hZAZobdD9mSQfR/Le0zwAcNIlvqgjEt0wgnRVk60sZ1HfTbKk+ORg==",
       "path": "steeltoe.extensions.configuration.cloudfoundrycore/2.1.1",
       "hashPath": "steeltoe.extensions.configuration.cloudfoundrycore.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.Extensions.Configuration.ConfigServerBase/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6Hozqb9Ex6MH58V8mIi6D0jmO/reYTsrIGOhNE2szaPFfyQnWib2Pv/Bi3+y+BxbHtiPMUqzia1aiF0lcIiWmQ==",
+      "path": "steeltoe.extensions.configuration.configserverbase/2.1.1",
+      "hashPath": "steeltoe.extensions.configuration.configserverbase.2.1.1.nupkg.sha512"
     },
     "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
       "type": "package",

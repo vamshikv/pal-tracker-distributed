@@ -2978,6 +2978,36 @@
           "lib/netstandard2.0/Pivotal.Discovery.EurekaBase.dll": {}
         }
       },
+      "Pivotal.Extensions.Configuration.ConfigServerBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Steeltoe.Common": "2.1.1",
+          "Steeltoe.Common.Http": "2.1.1",
+          "Steeltoe.Extensions.Configuration.CloudFoundryBase": "2.1.1",
+          "Steeltoe.Extensions.Configuration.ConfigServerBase": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerBase.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerBase.dll": {}
+        }
+      },
+      "Pivotal.Extensions.Configuration.ConfigServerCore/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
+          "Pivotal.Extensions.Configuration.ConfigServerBase": "2.1.1",
+          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerCore.dll": {}
+        }
+      },
       "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
         "type": "package",
         "dependencies": {
@@ -3433,6 +3463,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.dll": {}
+        }
+      },
+      "Steeltoe.Extensions.Configuration.ConfigServerBase/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Steeltoe.Common.Http": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.ConfigServerBase.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Extensions.Configuration.ConfigServerBase.dll": {}
         }
       },
       "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
@@ -5468,6 +5510,7 @@
           "Microsoft.Extensions.Logging.Debug": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
+          "Pivotal.Extensions.Configuration.ConfigServerCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
           "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1"
@@ -5510,6 +5553,7 @@
           "Microsoft.Extensions.Logging.Debug": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
+          "Pivotal.Extensions.Configuration.ConfigServerCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
           "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1"
@@ -5561,6 +5605,7 @@
           "Microsoft.Extensions.Logging.Debug": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
+          "Pivotal.Extensions.Configuration.ConfigServerCore": "2.1.1",
           "Projects": "1.0.0",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
@@ -5621,6 +5666,7 @@
           "Microsoft.Extensions.Logging.Debug": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
+          "Pivotal.Extensions.Configuration.ConfigServerCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
           "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1",
@@ -8776,6 +8822,30 @@
         "pivotal.discovery.eurekabase.nuspec"
       ]
     },
+    "Pivotal.Extensions.Configuration.ConfigServerBase/2.1.1": {
+      "sha512": "YIm43+rebNSFUTNMwgLe5RPCooQ+cHP7oOh4TcoEpwiU64ynsN/TQjC0RfNjyKQjN/OdTJKsKQ2g/CPvguvYUQ==",
+      "type": "package",
+      "path": "pivotal.extensions.configuration.configserverbase/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerBase.dll",
+        "pivotal.extensions.configuration.configserverbase.2.1.1.nupkg.sha512",
+        "pivotal.extensions.configuration.configserverbase.nuspec"
+      ]
+    },
+    "Pivotal.Extensions.Configuration.ConfigServerCore/2.1.1": {
+      "sha512": "ose0xSbdzHGPHpRgU0kvxvzOEL9w7C0z2YgtjlJQEaltr5MmFWzgCeZecbmarLRde/qjpPbf7uf1U/BNqs44vg==",
+      "type": "package",
+      "path": "pivotal.extensions.configuration.configservercore/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Pivotal.Extensions.Configuration.ConfigServerCore.dll",
+        "pivotal.extensions.configuration.configservercore.2.1.1.nupkg.sha512",
+        "pivotal.extensions.configuration.configservercore.nuspec"
+      ]
+    },
     "Pomelo.EntityFrameworkCore.MySql/2.1.2": {
       "sha512": "LyM3NFH3Tj1ppHZ9QdGoMxA8Ga+kouC7r7QwgPFxWwzsMOsns8Y935u6YQjDBNaPlClTDJSm1V7aOnidxtAMPw==",
       "type": "package",
@@ -9253,6 +9323,19 @@
         "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.xml",
         "steeltoe.extensions.configuration.cloudfoundrycore.2.1.1.nupkg.sha512",
         "steeltoe.extensions.configuration.cloudfoundrycore.nuspec"
+      ]
+    },
+    "Steeltoe.Extensions.Configuration.ConfigServerBase/2.1.1": {
+      "sha512": "6Hozqb9Ex6MH58V8mIi6D0jmO/reYTsrIGOhNE2szaPFfyQnWib2Pv/Bi3+y+BxbHtiPMUqzia1aiF0lcIiWmQ==",
+      "type": "package",
+      "path": "steeltoe.extensions.configuration.configserverbase/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.Extensions.Configuration.ConfigServerBase.dll",
+        "lib/netstandard2.0/Steeltoe.Extensions.Configuration.ConfigServerBase.xml",
+        "steeltoe.extensions.configuration.configserverbase.2.1.1.nupkg.sha512",
+        "steeltoe.extensions.configuration.configserverbase.nuspec"
       ]
     },
     "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
