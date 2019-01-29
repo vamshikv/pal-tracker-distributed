@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Steeltoe.CircuitBreaker.Hystrix;
 using Timesheets;
 
-namespace Allocations
+namespace Timesheets
 {
     public class GetProjectCommand : HystrixCommand<ProjectInfo>
     {

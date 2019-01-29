@@ -5,14 +5,17 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Pivotal.Discovery.Client;
 using Steeltoe.CloudFoundry.Connector.MySql.EFCore;
-using Steeltoe.Common.Discovery;
 using Timesheets;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Steeltoe.Security.Authentication.CloudFoundry;
-using Microsoft.AspNetCore.Mvc.Authorization;
+using Pivotal.Discovery.Client;
+using Steeltoe.Common.Discovery;
+using Steeltoe.CircuitBreaker.Hystrix;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Mvc.Authorization;
+using Steeltoe.Security.Authentication.CloudFoundry;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication;
 
 namespace TimesheetsServer
 {
@@ -44,20 +47,27 @@ namespace TimesheetsServer
 
             services.AddDbContext<TimeEntryContext>(options => options.UseMySql(Configuration));
             services.AddScoped<ITimeEntryDataGateway, TimeEntryDataGateway>();
-            
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddCloudFoundryJwtBearer(Configuration);
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IProjectClient>(sp =>
             {
-                var handler = new DiscoveryHttpClientHandler(sp.GetService<IDiscoveryClient>());
-                var httpClient = new HttpClient(handler, false)
+                
+				var handler = new DiscoveryHttpClientHandler(sp.GetService<IDiscoveryClient>());
+				var httpClient = new HttpClient(handler, false)
                 {
                     BaseAddress = new Uri(Configuration.GetValue<string>("REGISTRATION_SERVER_ENDPOINT"))
                 };
 
-                return new ProjectClient(httpClient);
+                var logger = sp.GetService<ILogger<ProjectClient>>();
+                var contextAccessor = sp.GetService<IHttpContextAccessor>();
+                return new ProjectClient(httpClient, logger, () => contextAccessor.HttpContext.GetTokenAsync("access_token")
+                 );
             });
+			services.AddHystrixMetricsStream(Configuration);
+			services.AddDiscoveryClient(Configuration);
 
-            services.AddDiscoveryClient(Configuration);
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddCloudFoundryJwtBearer(Configuration);
+			
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -67,7 +77,9 @@ namespace TimesheetsServer
             loggerFactory.AddDebug();
 
             app.UseMvc();
-            app.UseDiscoveryClient();
+			app.UseDiscoveryClient();
+			app.UseHystrixMetricsStream();
+			app.UseHystrixRequestContext();
         }
     }
 }
