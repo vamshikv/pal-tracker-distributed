@@ -3435,6 +3435,22 @@
           "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.dll": {}
         }
       },
+      "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.0.0",
+          "Microsoft.AspNetCore.Authentication.OAuth": "2.0.0",
+          "Steeltoe.CloudFoundry.ConnectorBase": "2.1.1",
+          "Steeltoe.Common.Http": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Security.Authentication.CloudFoundryCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Security.Authentication.CloudFoundryCore.dll": {}
+        }
+      },
       "System.AppContext/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5453,7 +5469,8 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
-          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1"
+          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
+          "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1"
         },
         "compile": {
           "bin/placeholder/AllocationsServer.dll": {}
@@ -5494,7 +5511,8 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
-          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1"
+          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
+          "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1"
         },
         "compile": {
           "bin/placeholder/BacklogServer.dll": {}
@@ -5546,6 +5564,7 @@
           "Projects": "1.0.0",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
+          "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1",
           "Users": "1.0.0"
         },
         "compile": {
@@ -5604,6 +5623,7 @@
           "Pivotal.Discovery.ClientCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
           "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
+          "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1",
           "Timesheets": "1.0.0"
         },
         "compile": {
@@ -9233,6 +9253,19 @@
         "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.xml",
         "steeltoe.extensions.configuration.cloudfoundrycore.2.1.1.nupkg.sha512",
         "steeltoe.extensions.configuration.cloudfoundrycore.nuspec"
+      ]
+    },
+    "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
+      "sha512": "7TbOKYNwwzz2nbk2EyWZaAa0+ss8iDGHTFBgkq2jAJnlchTKg71P+Q2QX+XfzyeO9G+jzZPrVIglJGdSlNyRXw==",
+      "type": "package",
+      "path": "steeltoe.security.authentication.cloudfoundrycore/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Steeltoe.Security.Authentication.CloudFoundryCore.dll",
+        "lib/netstandard2.0/Steeltoe.Security.Authentication.CloudFoundryCore.xml",
+        "steeltoe.security.authentication.cloudfoundrycore.2.1.1.nupkg.sha512",
+        "steeltoe.security.authentication.cloudfoundrycore.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {

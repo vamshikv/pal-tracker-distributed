@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "4a4121805abce8e7df9192888f3dfa53e0a6e911"
+    "signature": "43af9170602e7c16c5a34110c6b519f7a0a45a92"
   },
   "compilationOptions": {
     "defines": [
@@ -32,7 +32,8 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Pivotal.Discovery.ClientCore": "2.1.1",
           "Steeltoe.CloudFoundry.Connector.EFCore": "2.1.1",
-          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1"
+          "Steeltoe.Extensions.Configuration.CloudFoundryCore": "2.1.1",
+          "Steeltoe.Security.Authentication.CloudFoundryCore": "2.1.1"
         },
         "runtime": {
           "BacklogServer.dll": {}
@@ -677,6 +678,24 @@
         },
         "compile": {
           "lib/netstandard2.0/Steeltoe.Extensions.Configuration.CloudFoundryCore.dll": {}
+        }
+      },
+      "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.1.2",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "2.1.2",
+          "Microsoft.AspNetCore.Authentication.OAuth": "2.1.2",
+          "Steeltoe.CloudFoundry.ConnectorBase": "2.1.1",
+          "Steeltoe.Common.Http": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Steeltoe.Security.Authentication.CloudFoundryCore.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Steeltoe.Security.Authentication.CloudFoundryCore.dll": {}
         }
       },
       "System.Collections.Immutable/1.5.0": {},
@@ -4086,6 +4105,13 @@
       "sha512": "sha512-tswAk1x6qcX8nYnqhpE32fFqsFFSqTXt4hZAZobdD9mSQfR/Le0zwAcNIlvqgjEt0wgnRVk60sZ1HfTbKk+ORg==",
       "path": "steeltoe.extensions.configuration.cloudfoundrycore/2.1.1",
       "hashPath": "steeltoe.extensions.configuration.cloudfoundrycore.2.1.1.nupkg.sha512"
+    },
+    "Steeltoe.Security.Authentication.CloudFoundryCore/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7TbOKYNwwzz2nbk2EyWZaAa0+ss8iDGHTFBgkq2jAJnlchTKg71P+Q2QX+XfzyeO9G+jzZPrVIglJGdSlNyRXw==",
+      "path": "steeltoe.security.authentication.cloudfoundrycore/2.1.1",
+      "hashPath": "steeltoe.security.authentication.cloudfoundrycore.2.1.1.nupkg.sha512"
     },
     "System.Collections.Immutable/1.5.0": {
       "type": "package",
